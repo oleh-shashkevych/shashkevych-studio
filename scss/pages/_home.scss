@@ -1,0 +1,33 @@
+//================ Hero Section Styles ================
+
+.hero {
+  background-color: #f5f5f5; // Чуть темнее основного фона для выделения
+  padding: 100px 0; // Большие отступы для "воздуха"
+  text-align: center;
+
+  &__content {
+    max-width: 700px; // Ограничиваем ширину контента для лучшей читаемости
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 3rem; // 48px
+    font-weight: 800; // Делаем заголовок очень жирным
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  &__subtitle {
+    font-size: 1.25rem; // 20px
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+
+  .btn {
+    padding: 14px 32px;
+    font-size: 1.1rem;
+  }
+}

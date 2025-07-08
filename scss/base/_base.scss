@@ -1,0 +1,22 @@
+//================ Base Styles ================
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: $secondary-color;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

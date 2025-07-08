@@ -11,12 +11,20 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#">MyLogo</a>
-                <nav>
-                    <a href="#" style="margin-left: 15px;">Главная</a>
-                    <a href="#" style="margin-left: 15px;">О нас</a>
-                    <a href="#" style="margin-left: 15px;">Контакты</a>
+                <a href="#" class="header__logo">MyLogo</a>
+
+                <nav class="header__nav" id="header-nav">
+                    <a href="#" class="header__nav-link">Главная</a>
+                    <a href="#" class="header__nav-link">Услуги</a>
+                    <a href="#" class="header__nav-link">Портфолио</a>
+                    <a href="#" class="header__nav-link">Контакты</a>
                 </nav>
+
+                <button class="header__burger" id="burger-btn" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>

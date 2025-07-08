@@ -11,29 +11,57 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#">MyLogo</a>
-                <nav>
-                    <a href="#" style="margin-left: 15px;">Главная</a>
-                    <a href="#" style="margin-left: 15px;">Услуги</a>
-                    <a href="#" style="margin-left: 15px;">Портфолио</a>
-                    <a href="#" style="margin-left: 15px;">Контакты</a>
+                <a href="#" class="header__logo">MyLogo</a>
+
+                <nav class="header__nav" id="header-nav">
+                    <a href="#" class="header__nav-link">Главная</a>
+                    <a href="#" class="header__nav-link">Услуги</a>
+                    <a href="#" class="header__nav-link">Портфолио</a>
+                    <a href="#" class="header__nav-link">Контакты</a>
                 </nav>
+
+                <button class="header__burger" id="burger-btn" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="hero">
+        <section style="padding: 60px 0;">
             <div class="container">
-                <div class="hero__content">
-                    <h1 class="hero__title">Современные решения для вашего бизнеса</h1>
-                    <p class="hero__subtitle">Мы создаем быстрые, адаптивные и красивые сайты, которые решают задачи и приносят прибыль.</p>
-                    <a href="#" class="btn btn--primary">Обсудить проект</a>
+
+                <h1>Проект запущен!</h1>
+                
+                <h2 style="text-align: center; margin-bottom: 30px;">Тест компонентов</h2>
+
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <button class="btn">Акцентная кнопка</button>
+                    <button class="btn btn--primary">Основная кнопка</button>
+                    <button class="btn btn--outline">Контурная кнопка</button>
                 </div>
+
+                <form style="max-width: 500px; margin: 0 auto;">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Ваше имя</label>
+                        <input type="text" id="name" class="form-control" placeholder="Введите ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Введите ваш email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Сообщение</label>
+                        <textarea id="message" class="form-control" rows="4" placeholder="Ваше сообщение"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Отправить</button>
+                </form>
+
             </div>
         </section>
-
-        </main>
+    </main>
 
     <footer class="footer">
         <div class="container" style="text-align: center;">

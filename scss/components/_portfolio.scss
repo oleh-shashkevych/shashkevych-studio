@@ -13,6 +13,7 @@
         font-family: $font-family-accent;
         font-size: 2rem; // Сделаем заголовок чуть меньше на мобильных
         font-weight: 700;
+        line-height: 120%;
         margin-bottom: clamp(40px,5vw,96px);
         text-align: left;
         color: $text-color;
@@ -53,6 +54,9 @@
     }
 
     &__figure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         height: auto;
         aspect-ratio: 4 / 3;
@@ -61,16 +65,29 @@
         border-radius: 14px;
         overflow: hidden;
         position: relative;
+        padding: 2rem;
+
+        .background  {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            background-image: url(img/udi.webp);
+            background-color: $text-color;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            // 🔥 Вот магия для затемнения и размытия!
+            filter: blur(5px) brightness(0.5);
+        }
 
         img {
             width: 100%;
-            height: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
             object-fit: cover;
-            transition: $transition-medium;
-        }
-
-        &:hover img {
-            transform: scale(1.1);
+            border-radius: 8px;
         }
 
         &-hover {

@@ -8,13 +8,11 @@
 // 2. Layout styles
 @import 'layout/container';
 @import 'layout/header';
+@import 'layout/navigation';
 @import 'layout/footer';
 
 
 // 3. Component styles
 @import 'components/buttons';
 @import 'components/forms';
-
-
-// 4. Page-specific styles (стили для конкретных страниц)
-@import 'pages/home';
+@import 'components/portfolio';

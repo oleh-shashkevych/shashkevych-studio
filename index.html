@@ -7,18 +7,22 @@
     <link rel="stylesheet" href="scss/main.css">
 </head>
 <body>
-
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#" class="header__logo">MyLogo</a>
+                <a href="/" class="header__logo"><span>Shashkevych</span> Studio</a>
 
                 <nav class="header__nav" id="header-nav">
-                    <a href="#" class="header__nav-link">Главная</a>
-                    <a href="#" class="header__nav-link">Услуги</a>
-                    <a href="#" class="header__nav-link">Портфолио</a>
-                    <a href="#" class="header__nav-link">Контакты</a>
+                    <a href="#" class="header__nav-link">Option</a>
+                    <a href="#" class="header__nav-link">Option</a>
+                    <a href="#" class="header__nav-link">Option</a>
+                    <a href="#" class="header__nav-link">Option</a>
                 </nav>
+
+                <div class="header__buttons">
+                    <a href="#" class="btn">Contact</a>
+                    <a href="#" class="btn btn--outline">Dive Deeper</a>
+                </div>
 
                 <button class="header__burger" id="burger-btn" aria-label="Открыть меню">
                     <span></span>
@@ -29,36 +33,63 @@
         </div>
     </header>
 
+    <div class="navigation">
+        <a href="/" class="navigation__logo"><span>S</span>h.</a>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link">Option</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Option</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Option</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Option</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="navigation__button">Have a question?</a>
+    </div>
+
     <main>
-        <section style="padding: 60px 0;">
+        <section class="portfolio">
             <div class="container">
+                <h2 class="portfolio__subtitle">Elementor</h2>
+                <h3 class="portfolio__title">Elementor Websites</h3>
+                <div class="portfolio__grid">
 
-                <h1>Проект запущен!</h1>
-                
-                <h2 style="text-align: center; margin-bottom: 30px;">Тест компонентов</h2>
+                    <a href="https://udifish.check-it.co.il/" target="_blank" class="portfolio-card">
+                        <figure class="portfolio-card__figure">
+                            <img src="img/udi.webp" alt="Udi Fish">
+                            <div class="portfolio-card__figure-hover">
+                                <p>Here is description</p>
+                            </div>
+                        </figure>
+                        <div class="portfolio-card__body">
+                            <h3 class="portfolio-card__title">UDI Fish</h3>
+                        </div>
+                    </a>
 
-                <div style="text-align: center; margin-bottom: 40px;">
-                    <button class="btn">Акцентная кнопка</button>
-                    <button class="btn btn--primary">Основная кнопка</button>
-                    <button class="btn btn--outline">Контурная кнопка</button>
+                    <a href="https://imaginespaces.ai/" target="_blank" class="portfolio-card">
+                        <figure class="portfolio-card__figure">
+                            <img src="img/imagenpaces.webp" alt="Imagenpaces">
+                            <div class="portfolio-card__figure-hover">
+                                <p>Here is description</p>
+                            </div>
+                        </figure>
+                        <div class="portfolio-card__body">
+                            <h3 class="portfolio-card__title">ImagineSpaces</h3>
+                        </div>
+                    </a>
+
+                    <a href="https://www.kisu.co.il/" target="_blank" class="portfolio-card">
+                        <figure class="portfolio-card__figure">
+                            <img src="img/kisu.webp" alt="KISU">
+                            <div class="portfolio-card__figure-hover">
+                                <p>Here is description</p>
+                            </div>
+                        </figure>
+                        <div class="portfolio-card__body">
+                            <h3 class="portfolio-card__title">KISU</h3>
+                        </div>
+                    </a>
+
                 </div>
-
-                <form style="max-width: 500px; margin: 0 auto;">
-                    <div class="form-group">
-                        <label for="name" class="form-label">Ваше имя</label>
-                        <input type="text" id="name" class="form-control" placeholder="Введите ваше имя">
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" id="email" class="form-control" placeholder="Введите ваш email">
-                    </div>
-                    <div class="form-group">
-                        <label for="message" class="form-label">Сообщение</label>
-                        <textarea id="message" class="form-control" rows="4" placeholder="Ваше сообщение"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn--primary">Отправить</button>
-                </form>
-
             </div>
         </section>
     </main>

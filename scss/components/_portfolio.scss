@@ -1,0 +1,120 @@
+//================ Portfolio Section ================
+
+.portfolio {
+
+    &__subtitle {
+        font-size: 14px;
+        line-height: 2;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        font-family: $font-family-accent;
+        font-size: 2rem; // Сделаем заголовок чуть меньше на мобильных
+        font-weight: 700;
+        margin-bottom: clamp(40px,5vw,96px);
+        text-align: left;
+        color: $text-color;
+        margin-top: 0;
+
+        @media (min-width: $breakpoint-sm) {
+            font-size: 3rem; // Увеличиваем на больших экранах
+        }
+    }
+
+    &__grid {
+        display: grid;
+        gap: 30px 20px;
+        // Mobile-First: по умолчанию 1 колонка
+        grid-template-columns: 1fr;
+
+        @media (min-width: $breakpoint-sm) {
+            // Для планшетов (и выше) делаем 2 колонки
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: $breakpoint-md) {
+            // Для десктопов (и выше) делаем 3 колонки
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+.portfolio-card {
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    color: $text-color;
+    transition: $transition-short;
+
+    &:hover {
+        color: $text-color;
+    }
+
+    &__figure {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        margin: 0;
+        line-height: 0;
+        border-radius: 14px;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: $transition-medium;
+        }
+
+        &:hover img {
+            transform: scale(1.1);
+        }
+
+        &-hover {
+            display: flex;
+            align-items: flex-end;
+            position: absolute;
+            inset: 0;
+            color: $text-light;
+            font-size: 18px;
+            margin: 0;
+            line-height: 120%;
+            font-weight: 500;
+            padding: 2rem;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+            transition: $transition-short;
+            opacity: 0;
+            z-index: 2;
+
+            & * {
+                margin: 0;
+            }
+
+            @media (min-width: $breakpoint-sm) {
+                font-size: 22px;
+            }
+        }
+
+        &:hover &-hover {
+            opacity: 1;
+        }
+    }
+
+    &__body {
+        padding: 24px 0 0;
+    }
+
+    &__title {
+        font-family: $font-family-main;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0;
+
+        @media (min-width: $breakpoint-sm) {
+            font-size: 22px;
+        }
+    }
+}

@@ -76,12 +76,11 @@ p {
 }
 
 a {
-    color: $accent-color;
+    color: $primary-color;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: $transition-short;
 
     &:hover {
-        color: darken($accent-color, 10%);
-        text-decoration: underline;
+        color: darken($primary-color, 10%);
     }
 }
